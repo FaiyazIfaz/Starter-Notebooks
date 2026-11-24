@@ -1,0 +1,33 @@
+{
+  "task": "w04_baseline_score",
+  "n_rows": 30000,
+  "label_proxy": "trend_direction == down (evaluation only)",
+  "base_rate": 0.5421,
+  "signal_1": {
+    "name": "staleness",
+    "verdict": "MIXED"
+  },
+  "signal_2": {
+    "name": "ctr_vs_position",
+    "verdict": "CONFIRMED"
+  },
+  "n_flagged": 7755,
+  "precision_at_k": {
+    "10": 0.7,
+    "20": 0.7,
+    "50": 0.78,
+    "100": 0.86,
+    "500": 0.764
+  },
+  "first_attempt_precision_at_k": {
+    "10": 0.3,
+    "50": 0.48,
+    "100": 0.4
+  },
+  "rule_inputs": [
+    "impressions_90d",
+    "avg_position",
+    "ctr",
+    "days_since_last_update"
+  ]
+}
