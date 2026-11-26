@@ -1,0 +1,58 @@
+{
+  "task": "w05_model",
+  "split": "GroupKFold(5) by client_id, no client on both sides",
+  "seed": 42,
+  "base_rate_mean_test_folds": 0.5444,
+  "results": {
+    "Week-4 rule": {
+      "roc_auc": "0.526 +/- 0.048",
+      "precision_at_100": 0.81,
+      "precision_at_500": 0.729
+    },
+    "Logistic Regression": {
+      "roc_auc": "0.658 +/- 0.030",
+      "precision_at_100": 0.8,
+      "precision_at_500": 0.747
+    },
+    "Decision Tree (depth 3)": {
+      "roc_auc": "0.611 +/- 0.068",
+      "precision_at_100": 0.602,
+      "precision_at_500": 0.616
+    },
+    "Random Forest": {
+      "roc_auc": "0.668 +/- 0.036",
+      "precision_at_100": 0.682,
+      "precision_at_500": 0.736
+    },
+    "Gradient Boosting": {
+      "roc_auc": "0.677 +/- 0.042",
+      "precision_at_100": 0.776,
+      "precision_at_500": 0.738
+    }
+  },
+  "features_numeric": [
+    "search_volume",
+    "competition",
+    "cpc",
+    "word_count",
+    "char_count",
+    "log_impressions_90d",
+    "log_clicks_90d",
+    "log_sessions_90d",
+    "log_ai_sessions_90d",
+    "days_with_impressions",
+    "days_with_sessions",
+    "content_age_days",
+    "days_since_last_update",
+    "ctr",
+    "avg_position",
+    "engagement_rate",
+    "scroll_rate",
+    "ai_traffic_pct"
+  ],
+  "features_categorical": [
+    "competition_level",
+    "content_type",
+    "main_intent"
+  ]
+}
