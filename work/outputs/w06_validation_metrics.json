@@ -1,0 +1,21 @@
+{
+  "task": "w06_validation_audit",
+  "split_before_naive": {
+    "Logistic Regression": "0.709 +/- 0.006",
+    "Random Forest": "0.764 +/- 0.005",
+    "Gradient Boosting": "0.772 +/- 0.003"
+  },
+  "split_after_grouped": {
+    "Logistic Regression": "0.658 +/- 0.030",
+    "Random Forest": "0.668 +/- 0.036",
+    "Gradient Boosting": "0.677 +/- 0.042"
+  },
+  "leak_harness": {
+    "without_leak": 0.658,
+    "with_leak": 0.716
+  },
+  "pre_label_features_grouped": {
+    "Logistic Regression (pre-label features)": "0.660 +/- 0.060",
+    "Gradient Boosting (pre-label features)": "0.626 +/- 0.040"
+  }
+}
