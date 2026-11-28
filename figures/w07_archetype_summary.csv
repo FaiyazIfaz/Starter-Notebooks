@@ -1,6 +1,0 @@
-reason_code,pages,mean_risk_score,observed_declining_rate
-ctr_gap_and_stale,1216,0.754,0.747
-ctr_gap_page1,1787,0.685,0.711
-stale_only,6290,0.684,0.607
-fresh,18713,0.528,0.492
-other,1994,0.513,0.527
