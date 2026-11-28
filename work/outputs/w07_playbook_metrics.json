@@ -1,0 +1,27 @@
+{
+  "task": "w07_action_playbook",
+  "model": "Logistic Regression, pre-label features only (Week-6 fix), GroupKFold(5) by client_id",
+  "n_rows": 30000,
+  "n_clients": 32,
+  "base_rate": 0.5421,
+  "out_of_fold_auc": 0.6519,
+  "precision_at_k": {
+    "50": 0.88,
+    "100": 0.86,
+    "250": 0.816,
+    "500": 0.774,
+    "1000": 0.755
+  },
+  "reason_code_counts": {
+    "fresh": 18713,
+    "stale_only": 6290,
+    "other": 1994,
+    "ctr_gap_page1": 1787,
+    "ctr_gap_and_stale": 1216
+  },
+  "exports": [
+    "work/outputs/w07_action_queue.csv",
+    "work/figures/w07_archetype_summary.csv",
+    "work/figures/w07_archetype_declining_rate.png"
+  ]
+}
